@@ -1,0 +1,86 @@
+.mobileNav {
+
+	font-family: "Merienda", cursive;
+
+	&__button {
+		z-index: 1500;
+		position: fixed;
+		top: 0px;
+		right: 4px;
+		transition: all 0.4s ease;
+	} 
+	
+	&__menu {
+		top: 0;
+		z-index: 600;
+		backdrop-filter: blur(15px);
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		&-overlay {
+			top: 0;
+			left: 0;
+		}
+
+		h2 {
+			margin-bottom: 100px;
+			margin-top: 80px;
+			color: $color3;
+			filter: drop-shadow(0px 0px 10px white);
+			font-size: 1.8rem;
+		}
+		
+		&-link {
+			height: 50px;
+			font-size: 2rem;
+			font-weight: bold;
+			margin-top: 10px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			transition: all 0.3s ease;
+			text-decoration: none;
+			cursor: pointer;
+			
+			&:nth-child(2) {
+				color: $color2;
+				filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.987));
+			}
+			&:nth-child(3) {
+				color: $color2;
+				filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.987));
+			}
+			&:nth-child(4) {
+				color: $color3;
+				filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.987));
+			}
+			&:nth-child(8) {
+				font-size: 1.6rem;
+				color: #fff;
+				filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.987));
+			}
+		}
+	}
+}
+.mozilla {
+	background: rgb(255, 255, 255);
+
+}
+.others {
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.bm-burger-button {
+	display: none;
+}
+
+.bm-menu {
+	width: 100%;
+}
+
+.bm-item-list {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
