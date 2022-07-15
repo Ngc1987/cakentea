@@ -32,16 +32,16 @@ const MobileNav = ({ isOpen, setOpen, onToggle, handleOnClose }) => {
 				>Naviguer vers</h2>
 
 				<Link className="mobileNav__menu-link"
-					to="/home"
+					to="/"
 					onClick={(e) => { setOpen(); }}> Accueil</Link>
 
 				<Link className="mobileNav__menu-link"
-					to={`/profil`}
-					onClick={(e) => { setOpen(); }}>Profil</Link>
+					to={`/creations`}
+					onClick={(e) => { setOpen(); }}>Créations</Link>
 
 				<Link className="mobileNav__menu-link"
-					to="/chat"
-					onClick={(e) => { setOpen(); }}>Messagerie</Link>
+					to="/contact"
+					onClick={(e) => { setOpen(); }}>Contact</Link>
 				</Menu>
 		</nav>
 	)

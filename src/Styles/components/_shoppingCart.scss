@@ -1,0 +1,29 @@
+.shopping {
+	filter: drop-shadow(0 0 6px rgb(155, 69, 235));
+	// fill: rgb(155, 69, 235);
+	// align-self: flex-end;
+}
+
+.nav {
+	
+	path {
+		fill: #fff;
+	}
+	circle {
+		fill: #fff;
+	}
+
+}
+.add {
+	position: absolute;
+	right: 0;
+	
+
+	path {
+		fill: rgb(39, 43, 252);
+	}
+	circle {
+		fill: rgb(39, 43, 252);
+	}
+
+}

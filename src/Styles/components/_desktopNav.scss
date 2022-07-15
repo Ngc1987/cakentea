@@ -1,0 +1,49 @@
+.desktopNav {
+	// align-self: flex-end;
+	// height: 50px;
+	z-index: 50;
+	position: absolute;
+	right: 20px;
+	top: 60px;
+	display: flex;
+	flex-direction: row;
+	
+	&__link {
+		padding: 0 10px;
+		cursor: pointer;
+		font-family: Parisienne, cursive;
+		font-size: 2.5rem;
+		color: #fff;
+		transition: all 0.5s ease;
+		margin-right: 10px;
+	}
+	
+	.active {
+		filter: drop-shadow( 0px 0px 6px #fff);
+	}
+	.inactive {
+		filter: drop-shadow(0 0 6px rgb(155, 69, 235));
+	}
+
+	&__basket {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		img {
+			width: 30px;
+		}
+
+		&-number {
+			position: absolute;
+			top: 50%;
+			right: -10px;
+			transform: translateY(-50%);
+			font-size: 1.5rem;
+			color: red;
+		}
+	}
+
+	
+}
